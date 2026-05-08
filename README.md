@@ -231,17 +231,6 @@ Status: Available
 ```
 
 
----
-
-# Bonus Features (Optional)
-
-Students may earn bonus marks for implementing:
-- searching vehicles
-- sorting vehicles
-- exception handling
-- file handling
-- multiple customers
-- interfaces
 
 ---
 
