@@ -176,18 +176,95 @@ Create a class called:
 Customer
 ```
 
+The `Customer` class represents a customer renting vehicles from the rental company.
+
+---
+
+# Requirements
+
 ## Attributes
+
+The class must contain the following private attributes:
 
 ```java
 private String name;
 private String customerId;
 ```
 
-## Methods
+You may also include an `ArrayList` to store rented vehicles.
+
+Example:
 
 ```java
-rentVehicle(Vehicle vehicle)
+private ArrayList<Vehicle> rentedVehicles;
+```
+
+---
+
+# Constructor
+
+Create a constructor that initializes:
+- customer name
+- customer ID
+  
+
+Example:
+
+```java
+public Customer(String name, String customerId)
+```
+
+---
+
+# Methods
+
+## 1. rentVehicle()
+
+This method should:
+- allow a customer to rent a vehicle
+- change the vehicle rental status to rented
+- prevent renting a vehicle that is already rented
+- calculate and display rental cost
+
+Example:
+
+```java
+rentVehicle(Vehicle vehicle, int days)
+```
+
+---
+
+## 2. returnVehicle()
+
+This method should:
+- allow a customer to return a vehicle
+- change the rental status back to available
+
+Example:
+
+```java
 returnVehicle(Vehicle vehicle)
+```
+
+---
+
+## 3. displayCustomerInfo()
+
+This method should display:
+- customer details
+- rented vehicles
+
+Example output:
+
+```text
+===== CUSTOMER INFO =====
+
+Name: John
+Customer ID: C001
+
+Rented Vehicles:
+Toyota Corolla
+Yamaha R1
 ```
 
 ---
